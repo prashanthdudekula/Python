@@ -1,8 +1,13 @@
-n=int(input("Enter a number for Fibonacci Series : "))
-n1,n2=0,1
-print("{}\n{}".format(n1,n2))
-for i in range(2,n):
-    n3=n1+n2
-    print(n3)
-    n1=n2
-    n2=n3
+n=int(input())
+a=0
+b=1
+print("Fibonacci Sequence")
+i=0
+print("{}\n{}".format(a,b))
+while(i<n-2):
+    sum=a+b
+    print(sum)
+    a=b
+    b=sum
+    i+=1
+    
